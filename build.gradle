@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.0.0'       // Spring Boot 플러그인 추가
+    id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+sourceCompatibility = '17'      // Java 버전 설정
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // testImplementation platform('org.junit:junit-bom:5.10.0')
+    // testImplementation 'org.junit.jupiter:junit-jupiter'
+    implementation 'org.springframework.boot:spring-boot-starter-web'       // 웹 애플리케이션용 의존성 추가
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+// test {
+//     useJUnitPlatform()
+// }
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
