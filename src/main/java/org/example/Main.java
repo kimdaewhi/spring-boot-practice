@@ -25,6 +25,7 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication  // Spring BOot 애플리케이션 시작 지점
 public class Main {
     public static void main(String[] args) {
+        // /swagger-ui/index.html  Swagger UI 경로
         SpringApplication.run(Main.class, args);        // Spring Boot 애플리케이션 시작
     }
 }

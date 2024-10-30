@@ -1,2 +1,11 @@
 server:
   port: 8081
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+  info:
+    title: Spring Boot Test
+    description: This is a sample API for my Spring Boot application
+    version: 1.0.0
